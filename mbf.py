@@ -12,14 +12,41 @@ def kata(s):
         time.sleep(1./300)
 def baner():
     time.sleep(0.1)
-    kata("""\n\t\033[90m~  ~  ~\033[92m┌∩┐\033[94m(\033[91m◣_◢\033[94m)\033[92m┌∩┐\033[90m~  ~  ~
-\t\033[00m FACEBOOK MBF COOKIES V2
-\t\033[90m -----------------------\033[94m\n
-===========================================\033[00m
-Creator \033[1;91m: \033[1;96mFahmiApz\033[00m
-Youtube \033[1;91m: \033[1;96mKnifer12\033[00m
-Github  \033[1;91m: \033[4;92mgithub.com/BladeKnife\033[00m
-\033[94m===========================================\033[00m""")
+    kata("""\033[1;38;5;208m.@.                                    .
+             \033[1;38;5;208m@m@,.                                 .@
+           \033[1;38;5;208m.@m%nm@,.                            .@m@
+           \033[1;38;5;208m.@nvv%vnmm@,.                      .@mn%n@
+          \033[1;38;5;208m.@mnvvv%vvnnmm@,.                .@mmnv%vn@,
+        \033[1;38;5;208m@mmnnvvv%vvvvvnnmm@,.        .@mmnnvvv%vvnm@
+         \033[1;38;5;208m@mmnnvvvvv%vvvvvvnnmm@, ;;;@mmnnvvvvv%vvvnm@,
+        \033[1;38;5;208m`@mmnnvvvvvv%vvvvvnnmmm;;@mmnnvvvvvv%vvvvnmm@
+         \033[1;38;5;208m`@mmmnnvvvvvv%vvvnnmmm;%mmnnvvvvvv%vvvvnnmm@
+            \033[1;38;5;208m`@m%v%v%v%v%v;%;%;%;%;%;%;%%%vv%vvvvnnnmm@
+             \033[1;38;5;208m.,mm@@@@@mm%;;@@m@m@@m@@m@mm;;%%vvvnnnmm@;@,.
+         \033[1;38;5;208m.,@mmmmmmvv%%;;@@vmvvvvvvvvvmvm@@;;%%vvnnm@;%mmm@,
+       \033[1;38;5;208m.,@mmnnvvvvv%%;;@@vvvvv%%%%%%%vvvvmm@@;;%%mm@;%%nnnnm@,
+    \033[1;38;5;208m.,@mnnvv%v%v%v%%;;@mmvvvv%%;*;*;%%vvvvmmm@;;%m;%%v%v%v%vmm@,.
+\033[1;38;5;208m,@mnnvv%v%v%v%v%v%v%;;@@vvvv%%;*;*;*;%%vvvvm@@;;m%%%v%v%v%v%v%vnnm@,
+\033[1;38;5;208m`@mnnvv%v%v%v%%;;@mvvvvv%%;;*;;%%vvvmmmm@;;%m;%%v%v%v%vmm@'   '
+       \033[1;38;5;208m`@mmnnvvvvv%%;;@@mvvvv%%%%%%%vvvvmm@@;;%%mm@;%%nnnnm@'
+          \033[1;38;5;208m`@mmmmmmvv%%;;@@mvvvvvvvvvvmmm@@;;%%mmnmm@;%mmm@'
+            \033[1;38;5;208m`mm@@@@@mm%;;@m@@m@m@m@@m@@;;%%vvvvvnmm@;@'
+            \033[1;38;5;208m,@m%v%v%v%v%v;%;%;%;%;%;%;%;%vv%vvvvvnnmm@
+           \033[1;38;5;208m.@mmnnvvvvvvv%vvvvnnmm%mmnnvvvvvvv%vvvvnnmm@
+         \033[1;38;5;208m.@mmnnvvvvvv%vvvvvvnnmm'`@mmnnvvvvvv%vvvnnmm@
+         \033[1;38;5;208m@mmnnvvvvv%vvvvvvnnmm@':%::`@mmnnvvvv%vvvnm@'
+         \033[1;38;5;208m@mmnnvvv%vvvvvnnmm@'`:::%%:::'`@mmnnvv%vvmm@
+         \033[1;38;5;208m`@mnvvv%vvnnmm@'     `:;%%;:'     `@mvv%vm@'
+           \033[1;38;5;208m`@mnv%vnnm@'          `;%;'         `@n%n@
+           \033[1;38;5;208m`@m%mm@'              ;%;.           `@m@
+            \033[1;38;5;208m@m@'                 `;%;             `@
+             \033[1;38;5;208m`@'                   ;%;.             '    
+             \033[1;38;5;208m`                    `;%; 
+\033[1;38;5;208m============================================
+\033[1;38;5;208m💥DEVLOPER : FAIZUL BOFTEN
+\033[1;38;5;208m💥FACEBOOK " FAIZUL
+\033[1;38;5;208m💥WA       : 082271426251
+\033[1;38;5;208m============================================""")
 def balik():
     f=input("\033[00m\t[\033[96mEnter To Back\033[00m]")
     if f == "":
