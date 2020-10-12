@@ -1,5 +1,5 @@
-# Decompiled By RandiSr
-# Github : https://github.com/RANDIOLOY
+# Decompiled By Faizul
+# Github : https://github.com/Faizulcyber
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import os,sys,re,time,json,random,requests
@@ -34,10 +34,12 @@ def balik():
        sys.exit("\033[1;91mexit\033[00m")
 def mbf():
     time.sleep(0.1)
+    print("\033[37;1m╔════════════════════════════════════════════╗
     print("\033[00m[\033[93m1\033[00m] Login")
     print("\033[00m[\033[93m2\033[00m] Update")
     print("\033[00m[\033[93m3\033[00m] Group WA")
     print("\033[00m[\033[93m4\033[00m] Exit")
+    print("\033[37;1m╚════════════════════════════════════════════╝     
     time.sleep(0.1)
     f=input("\n\033[90m> \033[1;93m")
     if f == "1":
