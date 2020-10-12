@@ -301,7 +301,7 @@ def mbf():
          balik()
 
     elif f == "3":
-         os.system("xdg-open https://www.youtube.com/channel/UCSxkYGsMV5DvXz4GQJskl9Q')
+         os.system("xdg-open https://www.youtube.com/channel/UCSxkYGsMV5DvXz4GQJskl9Q")
          balik()
 
     elif f == "4":
