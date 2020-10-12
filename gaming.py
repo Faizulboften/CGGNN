@@ -34,7 +34,7 @@ def balik():
     else:
        sys.exit("\033[1;91mexit\033[00m")
 def mbf():
-    time.sleep(0.1)
+    time.sleep(0.7)
     print("\033[32;1m╔═════════════════════════════════╗")
     print("\033[00m[\033[32;1m1\033[35;1m] Login")
     print("\033[00m[\033[32;1m2\033[35;1m] Update")
@@ -189,8 +189,8 @@ def mbf():
                    kata('\033[1;97m{\033[1;95m03\033[1;97m}\033[32;1mCRACK DARI PENCARIAN NAMA')
                    kata('\033[1;97m{\033[1;95m04\033[1;97m}\033[32;1mCRACK DARI GRUB')
                    kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mCRACK DARI ID PUBLIC')
-                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mCRACK DARI  TEMAN')
-                   kata('\033[1;97m{\033[1;95m05\033[1;97m}\033[32;1mLIAT  HASIL DUMP')
+                   kata('\033[1;97m{\033[1;95m06\033[1;97m}\033[32;1mCRACK DARI  TEMAN')
+                   kata('\033[1;97m{\033[1;95m07\033[1;97m}\033[32;1mLIAT  HASIL DUMP')
                    kata('\033[31;1m╚═══════════════════════════════════════════════════════╝')
                    print()
                    tanya = input('\033[90m> \033[1;93m ')
